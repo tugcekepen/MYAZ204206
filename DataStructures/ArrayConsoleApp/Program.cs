@@ -4,7 +4,11 @@
 
 var array = new Array.Array(); // sadece Array() yazdığımızda c# kendi Array'i ile karıştırıp hangisi olduğunu çözümleyemediği için kitaplık adıyla birlikte belirttik.
 
-array.Add("Ahmet");
-array.Add("Mehmet");
+array.Add("Ahmet");    // 0   ->    4
+array.Add("Mehmet");   // 1   ->    4
+array.Add("Can");      // 2   ->    4
+array.Add("Filiz");    // 3   ->    4
+array.Add("Furkan");   // 4   ->    8
+
 
 Console.WriteLine(array.Count);
