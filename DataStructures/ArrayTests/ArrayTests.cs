@@ -133,8 +133,27 @@ namespace ArrayTests
             {
                 Assert.True(true);
             }
-        }
+        } //LAB-week1
 
+        [Fact]
+        public void Array_GetEnumerator_Test()
+        {
+            //Arrange
+            var array = new Array.Array();
+            array.Add("Ahmet");
+            array.Add("Mehmet");
+            array.Add("Can");
+
+            //Act
+            var result = "";
+            foreach (var item in array)
+            {
+                result = string.Concat(result, item);
+            }
+
+            //Assert
+            Assert.Equal("AhmetMehmetCan", result);
+        }
 
     }      
 }
