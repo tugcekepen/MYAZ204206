@@ -23,7 +23,7 @@ namespace Array
             }
             _InnerArray[index] = o;
             index++;
-        }
+        } 
 
         private void DoubleArray(object[] array)
         {
@@ -41,7 +41,7 @@ namespace Array
         {
             for (int i = 0; i < _InnerArray.Length; i++)
             {
-                if (_InnerArray[i] == o)
+                if (o.Equals(_InnerArray[i])) // DİKKAT !!! koşul (o == _InnerArray[i] yazabilirdik ama bu şekilde veri türünü kontrol edememiş oluruz!!!
                 {
                     return i;
                 }
