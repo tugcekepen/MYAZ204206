@@ -12,14 +12,35 @@ names2.Add("Büşra");
 names2.Add("Can");
 names2.Add("Burcu");
 
+var names3 = new Array.Array{
+    "Ahmet",
+    "Mehmet",
+    "Büşra",
+    "Can",
+    "Burcu" 
+};
+
+/*
 Console.WriteLine(names1.Count);         // 0 
 Console.WriteLine(names1.Capasity);      // 5
 
 Console.WriteLine(names2.Count);        // 5
 Console.WriteLine(names2.Capasity);     // 8
 
-
-
+Console.WriteLine(names3.Remove());     //  "Burcu"
+Console.WriteLine(names3.Remove());     //  "Can
+Console.WriteLine(names3.Remove());     //  "Büşra"
+Console.WriteLine(names3.Remove());     //  "Mehmet"
+Console.WriteLine(names3.Remove());     //  "Ahmet"
+Console.WriteLine(names3.Remove());
+*/
+/*
+var isimler = names1.Copy(1, 1);
+foreach (var item in isimler)
+{
+    Console.WriteLine(item);
+}
+*/
 
 
 #region week_01

@@ -105,14 +105,18 @@ namespace ArrayTests
             var array = new Array.Array();
             array.Add("Ahmet");
             array.Add("Mehmet");
+            array.Add("Büþra");
+            array.Add("Can");
+            array.Add("Burcu");
 
             //Act
             var item1 = array.Remove();
             var item2 = array.Remove();
 
             //Assert
-            Assert.Equal("Mehmet", item1);
-            Assert.Equal("Ahmet", item2);
+            Assert.Equal("Burcu", item1);
+            Assert.Equal("Can", item2);
+            Assert.Equal(4, array.Capasity);
         } //LAB-week1
 
         [Fact]
@@ -188,6 +192,27 @@ namespace ArrayTests
             // -- Assert.Equal("Antalya", second_item);
             // -- Assert.True(array.GetItem(3) == (object)"Antalya");
             Assert.True(array.GetItem(3).Equals("Antalya"));
-        } //teori - week2
+        } //teori-week2
+
+        [Fact]
+        public void Array_Copy_Test()
+        {
+            var array = new Array.Array();
+            array.Add(0);
+            array.Add(1);
+            array.Add(2);
+            array.Add(3);
+            array.Add(4);
+
+            var arr = array.Copy(1, 4);
+            var arr2 = array.Copy(0, 5);
+
+            Assert.Equal(3, arr.Length);
+            Assert.Equal(1, arr[0]);
+            Assert.Equal(2, arr[1]);
+            Assert.Equal(3, arr[2]);
+            Assert.Equal(5, arr2.Length);
+
+        }  //LAB-week2
     }      
 }
