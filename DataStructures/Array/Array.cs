@@ -45,6 +45,15 @@ namespace Array
             return _InnerArray[index];
         }
 
+        public void SetItem(int index, Object o)
+        {
+            if (index < 0 || index >= _InnerArray.Length)
+            {
+                throw new ArgumentOutOfRangeException("index");
+            }
+            _InnerArray[index] = o;
+        } //teori-week2
+
         public Object Find(object o)
         {
             for (int i = 0; i < _InnerArray.Length; i++)
@@ -66,6 +75,11 @@ namespace Array
 
         public Object RemoveItem(int index)
         {
+            if (index < 0 || index >= _InnerArray.Length)
+            {
+                throw new ArgumentOutOfRangeException("index");
+            }
+
             var newArray = new Object[_InnerArray.Length]; // innerAray -> 0 1 2 3     newArray -> 0 1 3     index=2  lenght=4
             var removed = _InnerArray[index];
             for (int i = 0; i < _InnerArray.Length-1; i++)

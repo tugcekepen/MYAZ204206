@@ -3,16 +3,26 @@
 // cmd -> cd .\ArrayConsoleApp\ -> dotnet add .\ArrayConsoleApp.csproj\ reference ..\Array\
 
 //overloading
-var names = new Array.Array("Ahmet", "Mehmet", "Büşra", "Can", "Burcu");
+var names1 = new Array.Array("Ahmet", "Mehmet", "Büşra", "Can", "Burcu");
 
-foreach (var name in names)
-{
-    Console.WriteLine(name);
-}
+var names2 = new Array.Array();
+names2.Add("Ahmet");
+names2.Add("Mehmet");
+names2.Add("Büşra");
+names2.Add("Can");
+names2.Add("Burcu");
+
+Console.WriteLine(names1.Count);         // 0 
+Console.WriteLine(names1.Capasity);      // 5
+
+Console.WriteLine(names2.Count);        // 5
+Console.WriteLine(names2.Capasity);     // 8
 
 
 
-# region week_01
+
+
+#region week_01
 /*
 var array = new Array.Array(); // sadece Array() yazdığımızda c# kendi Array'i ile karıştırıp hangisi olduğunu çözümleyemediği için kütüphane adıyla birlikte belirttik.
 // -  Bir sınıftan new'leme yapıyorsak ürettiğimiz şeye(burada "array") INSTANCE denir. !!!
