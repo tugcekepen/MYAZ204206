@@ -133,8 +133,61 @@ namespace ArrayTests
             {
                 Assert.True(true);
             }
+        } //LAB-week1
+
+        [Fact]
+        public void Array_GetEnumerator_Test()
+        {
+            //Arrange
+            var array = new Array.Array();
+            array.Add("Ahmet");
+            array.Add("Mehmet");
+            array.Add("Can");
+
+            //Act
+            var result = "";
+            foreach (var item in array)
+            {
+                result = string.Concat(result, item);
+            }
+
+            //Assert
+            Assert.Equal("AhmetMehmetCan", result);
+        } //LAB-week1
+
+        [Fact]
+        public void Array_GetItem_Test()
+        {
+            //Arrange
+            var array = new Array.Array("Samsun", "Ýstanbul", "Ýzmir", "Ankara");
+
+            //Act
+            var item1 = array.GetItem(3);
+            var item2 = array.GetItem(0);
+
+            //Assert
+            Assert.Equal("Ankara", item1);
+            Assert.Equal("Samsun", item2);
         }
 
+        [Fact]
+        public void Array_SetItem_Test()
+        {
+            //Arrange
+            var array = new Array.Array("Samsun", "Ýstanbul", "Ýzmir", "Ankara");
 
+            //Act
+            // -- var first_item = array.GetItem(3);
+            array.SetItem(3, "Antalya");
+            // -- var second_item = array.GetItem(3);
+
+            //Assert
+            // -- Assert.NotEqual(first_item, second_item);
+            // -- Assert.True(first_item != second_item);
+            // -- Assert.Equal("Ankara", first_item);
+            // -- Assert.Equal("Antalya", second_item);
+            // -- Assert.True(array.GetItem(3) == (object)"Antalya");
+            Assert.True(array.GetItem(3).Equals("Antalya"));
+        } //teori - week2
     }      
 }
