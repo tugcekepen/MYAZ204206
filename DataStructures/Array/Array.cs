@@ -86,6 +86,28 @@ namespace Array
                 throw new IndexOutOfRangeException();
             }
 
+            if (_InnerArray[index] == null)
+            {
+                throw new Exception("this index is null.");
+            }
+            //Other method
+            /*
+            var item = GetItem(position);
+            SetItem(position, null);
+            for(int i=position; i< Count-1; i++)
+            {
+                // _InnerArray[i] = _InnerArray[i + 1];
+                Swap(i, i + 1);
+            }
+            index--;
+            if(index == _InnerArray.Length / 2)
+            {
+                var newArray = new Object[_InnerArray.Length / 2];
+                System.Array.Copy(_InnerArray, newArray, newArray.Length);
+                _InnerArray = newArray;
+            }
+            return item;
+            */
             var newArray = new Object[_InnerArray.Length]; // innerAray -> 0 1 2 3     newArray -> 0 1 3     index=2  lenght=4
             var removed = _InnerArray[index];
             for (int i = 0; i < _InnerArray.Length-1; i++)
