@@ -64,9 +64,8 @@ void Collectionweek3sube2()
         }
     }
 
-    result.ForEach( r => Console.WriteLine( r.FullName ) );
+    result.ForEach( r => Console.WriteLine(r) );
 }
-
 void Collectionweek3sube1(){
     #region week-3-sube-1
     

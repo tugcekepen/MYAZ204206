@@ -10,5 +10,10 @@ namespace CollectionConsoleApp
     {
         public int Id { get; set; }
         public String? FullName { get; set; } = String.Empty;
+
+        public override string? ToString()
+        {
+            return $" {Id} {FullName}";
+        }
     }
 }
