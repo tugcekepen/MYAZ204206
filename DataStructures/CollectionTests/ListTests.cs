@@ -45,5 +45,52 @@ namespace CollectionTests
                 item => Assert.Equal(1, item),
                 item => Assert.Equal(3, item));
         }
+
+        [Fact]
+        public void Unique_Char_Set_Tests()
+        {
+            //Arrange
+            var l1 = "selamsamü".ToList();
+
+            //Act
+            var result = new List<char>(); 
+            foreach (var item in l1)
+            {
+                if (!result.Contains(item))
+                {
+                    result.Add(item);
+                }
+            }
+
+            //Assert
+            Assert.Equal(6, result.Count);
+            Assert.Collection<char>(result,
+                item => Assert.Equal('s', item),
+                item => Assert.Equal('e', item),
+                item => Assert.Equal('l', item),
+                item => Assert.Equal('a', item),
+                item => Assert.Equal('m', item),
+                item => Assert.Equal('ü', item));
+
+        }
+
+        [Fact]
+        public void HashSet_Test()
+        {
+            //Arrange and Act
+            var list = new HashSet<char>("tugcekepen");
+
+            //Assert
+            Assert.Equal(8, list.Count);
+            Assert.Collection<char>(list,
+                item => Assert.Equal('t', item),
+                item => Assert.Equal('u', item),
+                item => Assert.Equal('g', item),
+                item => Assert.Equal('c', item),
+                item => Assert.Equal('e', item),
+                item => Assert.Equal('k', item),
+                item => Assert.Equal('p', item),
+                item => Assert.Equal('n', item));
+        }
     }
 }
