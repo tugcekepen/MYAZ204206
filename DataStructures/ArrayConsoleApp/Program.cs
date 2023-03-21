@@ -2,6 +2,9 @@
 //or
 // cmd -> cd .\ArrayConsoleApp\ -> dotnet add .\ArrayConsoleApp.csproj\ reference ..\Array\
 
+// Immutable - Değişmez!
+
+#region week_02
 //overloading
 var names1 = new Array.Array("Ahmet", "Mehmet", "Büşra", "Can", "Burcu");
 
@@ -17,11 +20,7 @@ Console.WriteLine(names1.Capasity);      // 5
 
 Console.WriteLine(names2.Count);        // 5
 Console.WriteLine(names2.Capasity);     // 8
-
-
-
-
-
+#endregion
 #region week_01
 /*
 var array = new Array.Array(); // sadece Array() yazdığımızda c# kendi Array'i ile karıştırıp hangisi olduğunu çözümleyemediği için kütüphane adıyla birlikte belirttik.

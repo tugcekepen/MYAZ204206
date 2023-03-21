@@ -6,6 +6,7 @@ namespace Array
 {
     public class Array : IEnumerable
     {
+        //Diziler-Array'ler STATİKTİR.
         private Object[] _InnerArray;
         public int Count => index; //Dizide kaç eleman var? //sadece get kullandık
         public int Capasity => _InnerArray.Length; //sadece get kullandık // -  get; set; -> ACCESSOR denir

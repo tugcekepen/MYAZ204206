@@ -1,0 +1,15 @@
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\bin\Debug\net7.0\CollectionConsoleApp.exe
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\bin\Debug\net7.0\CollectionConsoleApp.deps.json
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\bin\Debug\net7.0\CollectionConsoleApp.runtimeconfig.json
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\bin\Debug\net7.0\CollectionConsoleApp.dll
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\bin\Debug\net7.0\CollectionConsoleApp.pdb
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\CollectionConsoleApp.csproj.AssemblyReference.cache
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\CollectionConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\CollectionConsoleApp.AssemblyInfoInputs.cache
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\CollectionConsoleApp.AssemblyInfo.cs
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\CollectionConsoleApp.csproj.CoreCompileInputs.cache
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\CollectionConsoleApp.dll
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\refint\CollectionConsoleApp.dll
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\CollectionConsoleApp.pdb
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\CollectionConsoleApp.genruntimeconfig.cache
+D:\MYAZ204206\DataStructures\CollectionConsoleApp\obj\Debug\net7.0\ref\CollectionConsoleApp.dll
